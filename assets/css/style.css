@@ -732,7 +732,9 @@
 }
 
 .affilate_page,
-.plan_page {
+.plan_page,
+.aboutus_page,
+.faq_page {
   margin-top: 68px;
   background-color: var(--bgColor);
   position: relative;
@@ -740,7 +742,9 @@
 }
 
 .affilate_page::after,
-.plan_page::after {
+.plan_page::after,
+.aboutus_page::after,
+.faq_page::after {
   position: absolute;
   content: "";
   height: 100%;
@@ -779,4 +783,196 @@
   font-size: 17px;
   line-height: 26px;
   color: var(--mainColor);
+}
+
+/* faq page */
+
+.faq_wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.faq_item_inner {
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  padding: 20px 24px;
+  width: 100%;
+}
+
+.faq_item_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq_title_wrapper {
+  position: relative;
+}
+
+.faq_title_text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.faq_icon_inner {
+  height: 21px;
+  width: 21px;
+  border: 1px solid var(--primaryColor);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.faq_icon_inner span i {
+  font-size: 12px;
+  color: var(--primaryColor);
+}
+
+.faq_item_content {
+  transition: 0.1s;
+  height: 0px;
+  opacity: 0;
+}
+
+.showAcordion .faq_item_content {
+  border-top: 1px solid #e2e2e2;
+  padding: 20px 0px;
+  height: auto;
+  margin-top: 20px;
+  opacity: 1;
+}
+
+.faq_item_text {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--mainColor);
+  display: none;
+}
+
+.showAcordion .faq_item_text {
+  display: block;
+}
+
+/* sign in page */
+
+.signin_page {
+  margin-top: 68px;
+  height: auto;
+  width: 100%;
+  background-image: url(../image/payment/Group\ 622.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.signin_form_content {
+  max-width: 650px;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  margin: 0px auto;
+}
+
+.signin_form_title {
+  margin-bottom: 30px;
+}
+
+.sigin_form_heading {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+
+.sign_form_subtitle {
+  font-size: 18px;
+  color: var(--textColor);
+  line-height: 24px;
+}
+
+.sign_form_wrapper {
+  position: relative;
+}
+
+.sign_input_wrapper:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.sign_input_title {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--mainColor);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sign_input_inner {
+  position: relative;
+}
+
+.sign_input_control {
+  background-color: #e2e2e2 !important;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.sign_in_forget {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--textColor);
+}
+
+.sign_form_btn {
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.sign_form_btn a {
+  display: grid;
+  place-content: center;
+  height: 60px;
+  border-radius: 12px;
+  color: var(--textNormal);
+  background-color: var(--primaryColor);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* sign up */
+
+.signup_page {
+  margin-top: 68px;
+  min-height: auto;
+  width: 100%;
+  background-image: url(../image/payment/Group\ 624.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.signup_content {
+  max-width: 650px;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: var(--bgColor);
+  border-radius: 12px;
+  margin: 0px auto;
 }

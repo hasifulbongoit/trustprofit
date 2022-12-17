@@ -98,6 +98,19 @@
   .conact_input_wrapper {
     flex-direction: row;
   }
+
+  .faq_wrapper {
+    flex-direction: row;
+  }
+
+  .faq_item_inner {
+    width: calc(50% - 12px);
+  }
+
+  .signin_form_content,
+  .signup_content {
+    padding: 40px 30px;
+  }
 }
 
 /* ==============responsive 1024 ============== */
@@ -171,6 +184,11 @@
   .contact_details {
     width: 42%;
   }
+
+  .signin_form_content,
+  .signup_content {
+    padding: 50px 50px;
+  }
 }
 
 /* ==============responsive 1200 ============== */
@@ -195,12 +213,25 @@
   .banner_section,
   .contact_page,
   .plan_page,
-  .affilate_page {
+  .affilate_page,
+  .aboutus_page,
+  .faq_page,
+  .signin_page {
     margin-top: 80px;
   }
 
   .banner_title {
     font-size: 52px;
     line-height: 62px;
+  }
+
+  .signin_form_content,
+  .signup_content {
+    max-width: 650px;
+    width: 100%;
+    padding: 50px 80px;
+    background-color: var(--bgColor);
+    border-radius: 12px;
+    margin: 0px auto;
   }
 }
